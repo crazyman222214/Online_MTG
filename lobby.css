@@ -1,0 +1,40 @@
+html, body {
+    height: 99%;
+    width: 99%;
+
+}
+
+#deckFile {
+    position: absolute;
+    top: 13%;
+    left: 20%;
+}
+
+#lobbyHeader {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+
+#lobbyBody {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 99.5%;
+    width: 45%;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+
+#format {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    visibility: hidden;
+}
+#submit {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    visibility: hidden;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node MTG</title>
+</head>
+<body>
+    <div id="top-bar">
+        <div id="life">
+            <button id="life-add" onclick="changeLife('add')">+</button>
+            <div id="life-amt">20</div>
+            <button id="life-minus" onclick="changeLife('minus')">-</button>
+        </div>
+    </div>
+    <img id="zoomedCard"/>
+    <div id="battlefield"></div>
+    <div id="deckNameDisplay">Deck: 100</div>
+    <div id="graveyardNameDisplay">Graveyard: 0</div>
+    <div id="exileNameDisplay">Exile: 0</div>
+    <div id="commanderNameDisplay">Commander</div>
+    <div id="bottom-bar">
+        <div id="hand"></div>
+        <div id="deck" onclick="draw()"></div>
+        <div id="graveyard"></div>
+        <div id="exile"></div>
+        <div id="commander"></div>
+    </div>
+    <button id="searchButton" onclick="onSearchDeck()">Search Library</button>
+    <div id="searchDeck">
+        <input type="text" placeholder="Search.." oninput="searchFilter()" id="searchFilter"/>
+        <button id='searchClose' onclick="searchClose()">Close & Shuffle</button>
+        <img id="searchZoomedCard"/>
+        <ul id="searchDeckList"></ul>
+    </div>
+
+    <ul id="contextMenu">
+        <li class="contextMenuSelection">SOMETHING</li>
+        <li class="contextMenuSelection">SOMETHING ELSE</li>
+        <li>WOW</li>
+    </ul>
+</body>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="game.js"></script>
+<script src="card.js"></script>
+</html>

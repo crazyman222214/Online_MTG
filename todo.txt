@@ -1,0 +1,12 @@
+In game things:
+    Being able to play with top card of deck revealed
+    Counters (+1/+1 and others)
+    Tokens
+    Flipping over double-sided cards
+    Next turn feature/turn counter
+
+Backend things:
+    Get the state of the game onto server
+    broadcast only the things that the players need to see (Field, Grave, etc.)
+    Be able to connect more than one player and still have all the info broadcasted
+    Track whose turn it is and stop out-of-turn play
